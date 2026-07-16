@@ -45,7 +45,8 @@ curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,
     CURLOPT_FOLLOWLOCATION => true,
-    CURLOPT_TIMEOUT => 30,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_CONNECTTIMEOUT => 0,
     CURLOPT_POSTFIELDS => http_build_query([
         'url' => $url
     ]),
